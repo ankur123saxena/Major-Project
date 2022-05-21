@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+    <title>Project Management System</title>
+    <style>
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body{
+        background: url(./images/back.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      header {
+        width: 100%;
+        padding: 1%;
+        background-color:rgb(10, 134, 184);
+      }
+      header h1 {
+        color: white;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-left: 25px;
+      }
+      .container{
+          display: flex;
+          justify-content:space-evenly;
+      }
+      .container1 img{
+         display: flex;
+         align-items: center;
+         margin-top: 10%;
+         border-radius: 50%;
+      }
+      button{
+          background-color: rgb(10, 134, 184);
+          border: 2px solid rgb(10, 134, 184);
+          padding: 5% 15%;
+          border-radius: 12px;
+          transition: 0.5s;
+      }
+      button:hover{background-color:rgb(1, 82, 114);}
+      a{
+          text-decoration: none;
+          color: white;
+          font-size: 20px;
+      }
+      h1{
+        color: white;
+        font-family: Comic Sans MS, Comic Sans, cursive;
+        font-size: 55px;
+      }
+      .head{
+        margin-bottom: 8%;
+        margin-top: 3%;
+      }
+      @media (max-width:420px){
+        .container{
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column; 
+      }
+      .container1 img{
+         display: flex;
+         align-items: center;
+         margin-top: 10%;
+         border-radius: 50%;
+         flex-wrap: wrap;
+          flex-direction: column; 
+      }
+
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+    <div class="head">
+    <h1><i class="fa fa-sitemap"></i> Project Management System</h1>
+  </div>
+    </center>
+    <center>
+    <div class="container">
+        <div class="container1">
+            <img src="./images/1.png" alt="">
+            <h2 style="padding: 3%;">User</h2>
+            <button><a href="./pages/Student_Login.html">Login</a></button>
+        </div>
+        &nbsp;&nbsp;
+        <div class="container1">
+            <img src="./images/1.png" alt="">
+            <h2 style="padding: 3%;">Instructor</h2>
+            <button><a href="./pages/Instructor_login.html">Login</a></button>
+        </div>
+    </div>
+    </center>
+  </body>
+</html>

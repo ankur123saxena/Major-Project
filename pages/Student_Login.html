@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> Studnet Login</title>
+
+
+</head>
+<script>
+ function verify(){
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+ }
+</script>
+<style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    
+    }
+    body{
+        background: url(../images/back.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+      }
+    .logo{
+      margin-top: 4%;
+
+    }
+    .form{
+        font-size: 30px;
+        margin-top:4%;
+        color: white;
+        
+
+    }
+
+    #fname,#Password{
+        padding:1%;
+        width:30%;
+        outline: none;
+      
+    } 
+    .btn {
+      margin-top: 3.9%;
+      font-size: 30px;
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-top: 0.7%;
+      padding-bottom: 0.7%;
+      background-color: rgb(10, 134, 184);
+      color: white;
+      font-family: sans-serif;
+      margin-left: 8%;
+     border: rgb(10, 134, 184);
+     border-radius: 20px;
+     transition: 0.5s;
+    }
+    .btn:hover{
+        background-color: rgb(6, 60, 82);
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    h1{
+        color: white;
+        font-family: Comic Sans MS, Comic Sans, cursive;
+        font-size: 55px;
+      }
+      .head{
+        margin-bottom: 8%;
+        margin-top: 3%;
+      }
+      input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 3px solid rgb(155, 9, 38);
+  color: aliceblue;
+  font-size: 20px;
+  
+}
+::placeholder{
+  color:rgb(155, 9, 38);
+  font-weight:bold;
+  opacity: 1;
+  font-size: 25px;
+ 
+}
+@media (max-width:1000px) and (min-width:201px){
+  #fname,#Password{
+        
+        width:70%;
+        outline: none;
+        margin-top: 10%;
+       
+      
+    } 
+    .btn {
+      margin-top: 20%;
+      font-size: 30px;
+      padding-left: 20%;
+      padding-right: 20%;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      background-color: rgb(10, 134, 184);
+      color: white;
+      font-family: sans-serif;
+      margin-left: 8%;
+     border: rgb(10, 134, 184);
+     border-radius: 20px;
+     transition: 0.5s;
+    }
+    h1{
+        color:whitesmoke;
+        font-family: Comic Sans MS, Comic Sans, cursive;
+        font-size: 40px;
+      }
+}
+</style>
+<body>
+    <main>
+        <div class="Container">
+         
+            <center>
+            <div class="head">
+                <h1><i class="fa fa-sitemap"></i> Project Management System</h1>
+              </div>
+        </center>
+        </div>
+        <center>
+            <form action="../pages/student_home.html" method="post">
+
+                <label for="email"></label>
+                <input type="email" id="fname" name="email" placeholder="Email" required /><br /><br />
+                <br />
+                <label for="password"></label>
+                <input type="password" id="Password" name="password" placeholder="Password" required/>
+                <div>
+                <button class="btn" type="submit">Login
+                  <!-- <a href="../pages/student_home.html"><h3>Login</h3></a> -->
+                 </button>
+                 </div>
+              </form>
+        
+        </center>
+       
+    </main>
+    <script>
+      // function validateform() {
+      //   var name = document["myform"]["email"].value;
+      //   var password = document["myform"]["password"].value;
+      //   if(name==null|| name ==""){
+      //     alert("Name must be fiiled");
+      //     return false;
+      //   } 
+      //   else if(password.length<6){
+      //     alert("Password must be at least 6 chrachters long");
+      //     return false;
+      //   }
+      // } <script type="text/javascript">
+     
+  function validateForm() {
+    var a = document.forms["Form"]["answer_a"].value;
+    var b = document.forms["Form"]["answer_b"].value;
+    if (a == null || a == "", b == null || b == "", c == null || c == "", d == null || d == "") {
+      alert("Please Fill All Required Field");
+      return false;
+    }
+  }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project-1</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/29ee0bc57e.js" crossorigin="anonymous">
+    </script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    
+   
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Alegreya+Sans:800");
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Alegreya Sans", sans-serif;
+      overflow-x: hidden;
+    }
+    .nav {
+      height: 100%;
+      width: 0;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color:rgba(21, 1, 44, 0.863);
+      opacity: 0.9;
+      overflow-x: hidden;
+      padding-top: 60px;
+      transition: 0.7s;
+    }
+    .nav a {
+      display: block;
+      padding: 20px 30px;
+      font-size: 25px;
+      text-decoration: none;
+      color: white;
+      
+     
+    }
+    
+    .nav a:hover {
+      color:white;
+      transition: 0.4s;
+
+    }
+    .nav .close {
+      position: absolute;
+      top: 0;
+    
+      margin-left:15px;
+      font-size:30px;
+      
+    }
+    .nav .close img{
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+       
+    }
+    .slide a {
+      color:white;
+      font-size: 38px;
+      margin-right: 1%;
+    }
+    
+    #content {
+      /* padding: 20px; */
+      margin-left: 2%;
+      transition: margin-left 0.7s;
+      overflow: hidden;
+      width: 100%;
+      
+    }
+   .an:hover{
+       background-color:orangered;
+       border-left:5px solid white;
+       transition: 0.7s;
+   }
+   header{
+        background-color: rgba(19, 3, 41, 0.623);
+        color: white;
+        font-size: 35px;
+        padding-top: 1%;
+        padding-bottom: 1%;
+      
+        padding-left: 3%;
+       margin-bottom: 1.4%;
+
+        
+      }
+      table{
+       
+       width: 90%;
+       border-collapse: separate;
+     border-spacing: 1;
+     border-right: 20px solid white;
+     border-left: 20px solid white;
+     border-top:20px solid white;
+     border-bottom:20px solid white;
+     
+   }
+   table th{
+     padding: 15px;;
+   }
+   table td{
+       /* padding-right:270px; */
+       padding:15px;
+       /* padding-left: 15px; */
+       border-collapse: separate;
+      text-align: center;
+    
+   }
+   tbody tr:nth-child(odd){
+       background-color:rgb(201, 171, 230);
+   }
+  
+      
+    </style>
+<body>
+    <div id="content">
+        <header>
+          <span class="slide">
+            <a href="#" onclick="openSlideMenu1()">
+              <i class="fas fa-bars"></i>
+            </a>
+          </span>
+          <i class="fa fa-laptop" style="padding: 5px;"></i> Projects
+          
+        </header>
+  
+  
+  
+  
+        <div id="menu" class="nav">
+          <a href="#" class="close" onclick="closeSlideMenu()">
+          <img src="../images/profile.jpg" style="float: left;margin-right: 70px;"><i class="fas fa-times"></i>
+          </a>
+         
+          <br>
+          
+          <br>
+         <h3 style="margin-left: 22%;;color:white;"> Admin</h3>
+          <a href="./Admin-dashboard1.html" class="an">Dashboard</a>
+          <a href="./Adminprojects.html" class="an">Projects</a>
+          <!-- <a href="#" class="an">Track Projects</a> -->
+          <a href="./newProject.html" class="an"><i class="fa fa-plus"> </i> New Project</a>
+          <a href="./Adminprofile.html" class="an">My Profile</a>
+          <a href="./Instructor_login.html" class="an" target="_self">SignOut</a>
+        </div> 
+       
+        <div class="main">
+            <center>
+            <table>
+                <tbody>
+                <tr>
+                    <th>Project</th>
+                   
+                    <th>
+                        Assigned Date
+                    </th>
+                    <th>Tools</th>
+                </tr>
+                <tr>
+                    <td>
+                       1) Bug tracking System
+                   
+                    </td>
+                    <td>
+                       21/10/2021 </a><br>
+                    </td>
+                    <td>
+                      <i title="Edit" class="material-icons button edit"> edit </i>
+                      <i title="Delete" class="material-icons button delete"> delete </i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       2) E-Commerce Website
+                   
+                    </td>
+                    <td>
+                       11/10/2021 </a><br>
+                      
+                    </td>
+                    <td>
+                      <i title="Edit" class="material-icons button edit"> edit </i>
+                      <i title="Delete" class="material-icons button delete"> delete </i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       3) To Do App
+                   
+                    </td>
+                    <td>
+                       02/08/2021 </a><br>
+                      
+                    </td>
+                    <td>
+                      <i title="Edit" class="material-icons button edit"> edit </i>
+                      <i title="Delete" class="material-icons button delete"> delete </i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       4) Online chating App
+                   
+                    </td>
+                    <td>
+                       01/11/2021 </a><br>
+                      
+                    </td>
+                    <td>
+                      <i title="Edit" class="material-icons button edit"> edit </i>
+                      <i title="Delete" class="material-icons button delete"> delete </i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       5) Stock Management System
+                   
+                    </td>
+                    <td>
+                       08/10/2021 </a><br>
+                      
+                    </td>
+                    <td>
+                      <i title="Edit" class="material-icons button edit"> edit </i>
+                      <i title="Delete" class="material-icons button delete"> delete </i>
+                    </td>
+                </tr> <tr>
+                    <td>
+                       6) Online Gaming App
+                   
+                    </td>
+                    <td>
+                       11/08/2021 </a><br>
+                      
+                    </td>
+                    <td>
+                      <i title="Edit" class="material-icons button edit"> edit </i>
+                      <i title="Delete" class="material-icons button delete"> delete </i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       7) Movie Website
+                   
+                    </td>
+                    <td>
+                       31/4/2021 </a><br>
+                      
+                    </td>
+                    <td>
+                      <i title="Edit" class="material-icons button edit"> edit </i>
+                      <i title="Delete" class="material-icons button delete"> delete </i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       8) Music Player
+                   
+                    </td>
+                    <td>
+                       25/03/2021 </a><br>
+                      
+                    </td>
+                    <td>
+                      <i title="Edit" class="material-icons button edit"> edit </i>
+                      <i title="Delete" class="material-icons button delete"> delete </i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       9) Shopping Website
+                   
+                    </td>
+                    <td>
+                       29/01/2021 </a><br>
+                      
+                    </td>
+                    <td>
+                      <i title="Edit" class="material-icons button edit"> edit </i>
+                      <i title="Delete" class="material-icons button delete"> delete </i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       10) Smart City Management System
+                   
+                    </td>
+                    <td>
+                       13/05/2021 </a><br>
+                      
+                    </td>
+                    <td>
+                      <i title="Edit" class="material-icons button edit"> edit </i>
+                      <i title="Delete" class="material-icons button delete"> delete </i>
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+        </center>
+        </div>
+        
+</body>
+<script>
+  // function openSlideMenu() {
+  //   document.getElementById("menu").style.width = "250px";
+  //   document.getElementById("content").style.marginLeft = "250px";
+  // }
+  function openSlideMenu1(){
+    var x = window.matchMedia("(max-width:900px)")
+    if (x.matches){
+    document.getElementById("menu").style.width = "250px";
+    }
+    else{
+      document.getElementById("menu").style.width = "250px";
+      document.getElementById("content").style.marginLeft = "250px";
+    }
+    x.addListener(openSlideMenu1);
+  }
+  function closeSlideMenu() {
+    document.getElementById("menu").style.width = "0";
+    document.getElementById("content").style.marginLeft = "0";
+  }
+</script>
+</html>

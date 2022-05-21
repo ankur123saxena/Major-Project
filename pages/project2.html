@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project-2</title>
+    <script src="https://kit.fontawesome.com/29ee0bc57e.js" crossorigin="anonymous">
+    </script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function openSlideMenu1(){
+        var x = window.matchMedia("(max-width:1000px) and (min-width:350px")
+        if (x.matches){
+        document.getElementById("menu").style.width = "350px";
+        }
+        else{
+          document.getElementById("menu").style.width = "250px";
+          document.getElementById("content").style.marginLeft = "250px";
+        }
+        x.addListener(openSlideMenu1);
+      }
+      function closeSlideMenu() {
+        document.getElementById("menu").style.width = "0";
+        document.getElementById("content").style.marginLeft = "0";
+      }
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Alegreya+Sans:800");
+      *{
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Alegreya Sans", sans-serif;
+        overflow-x: hidden;
+      }
+      .nav {
+        height: 100%;
+        width: 0;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color:rgb(43, 163, 211);
+        opacity: 0.9;
+        overflow-x: hidden;
+        padding-top: 70px;
+        transition: 0.7s;
+      }
+      .nav a {
+        display: block;
+        padding: 20px 30px;
+        font-size: 25px;
+        text-decoration: none;
+        color:white;
+      }
+      .an:hover{
+    
+        background-color: orangered;
+        border-left: 3px solid white;
+        transition: 0.4s;
+      }
+      .nav .close {
+        position: absolute;
+        top: 0;
+        right: 22px;
+        margin-left: 50px;
+        margin-bottom: 20px;
+        font-size: 25px;
+      }
+      .slide a {
+        color: #000;
+        font-size: 36px;
+      }
+      #content {
+        padding: 20px;
+        transition: margin-left 0.7s;
+        overflow: hidden;
+        width: 100%;
+      }
+      /* #image{
+         width: 80%;
+         height: 300px;
+         border: 2px solid black;
+          
+      } */
+      /* .picture{
+          background-image: url(../images/vc.jpg);
+          background-size: cover; */
+          /* width: 80%;
+      } */
+      .box1 {
+        width: 80%;
+        background-color: rgb(255, 243, 220);
+        display: block;
+        padding: 10px;
+        margin-bottom: 10px;
+        text-align: justify;
+        border-radius: 5px;
+      }
+
+      .box2 {
+        width: 80%;
+        background-color: rgb(255, 243, 220);
+        display: block;
+        padding: 10px;
+        text-align: justify;
+      }
+        .progress form {
+        display: flex;
+        height: 8vh;
+    }
+      .report h1{
+        display: flex;
+        justify-content:left;
+        align-items: center;
+      }
+      form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        margin-left: 3%;
+        border:2px solid black;
+        border-radius: 10px;
+    }
+
+   .report h1 {
+        font-size: 40px;
+        letter-spacing: 1px;
+        color: black;
+    }
+
+    form input{
+        padding-left: 12px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-right: 12px;
+        font-size: 25px;
+        width: 110%;
+        outline: none;
+        border: none;
+        border-radius: 15px;
+        background: white;
+    }
+    form button {
+        padding: 10px;
+        font-size: 28px;
+        outline: none;
+        border: none;
+        border-radius: 15px;
+        background: white;
+    }
+
+    form button {
+        margin-left: 3px;
+        background-color: white;
+        cursor: pointer;
+
+    }
+
+    form button:hover {
+
+        background-color: skyblue;
+        color: white;
+    }
+
+    .todo-container {
+        display: flex;
+        justify-content: left;
+
+    }
+
+    .todo-list {
+        list-style: none;
+        width: 60%;
+        justify-content: left;
+    }
+
+    .todo {
+
+        background-color: wheat;
+        margin: 10px 0px;
+        color: purple;
+        font-size: 24px;
+        display: flex;
+        justify-content: left;
+        align-self: start;
+    }
+
+    .todo-li {
+        flex: 1;
+        margin: 0 0px;
+        background-color: rgb(250, 240, 220);
+    }
+
+    /* .chk-btn {
+        background-color: green;
+        color: white;
+        outline: none;
+        padding: 10px;
+        font-size: 15px;
+    } */
+
+    .del-btn {
+        background-color: red;
+        color: white;
+        outline: none;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .fa-trash,
+    .fa-check {
+        pointer-events: none;
+
+    }
+
+    .done {
+        text-decoration: line-through;
+        opacity: .5;
+    }
+    p{
+      font-size: 20px;
+      font-style: italic;
+    }
+    .nav .close img{
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+       
+    }
+    .picture img{
+      border-radius: 20px;
+    }
+    @media(max-width:400px){
+      .picture img{
+        width: 100%;
+        height: 200px;
+      }
+    }
+    @media(min-width:400px)and(max-width:1000px){
+      .picture img{
+        width: 100%;
+        height: 280px;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <header>
+      <span class="slide">
+        <a href="#" onclick="openSlideMenu1()">
+          <i class="fas fa-bars"></i>
+        </a>
+        
+      </span>
+    </header>
+      <div id="menu" class="nav">
+        <a href="#" class="close" onclick="closeSlideMenu()">
+          <i class="fas fa-times"></i>
+        </a>
+        <a href="../pages/student_home.html" class="an">Dashboard</a>
+        <a href="../pages/Student_profile.html" class="an">Profile</a>
+        <a href="../pages/Student_Login.html" class="an">SignOut</a>
+      </div>
+      <div id="image">
+        <div class="picture">
+          <img src="../images/project.jpg" alt="" width="100%" height="390px">
+        </div>
+      </div>
+      <div id="project details">
+        <h1><u>Project &nbsp;: &nbsp; E-Commerce Website</u></h1>
+        <h2 style="color: rgb(134, 48, 214);">
+          Description :E-Commerce is a web-based application that covers all the functionality of an online shopping web application where a user can view the required product and buy them.
+        </h2>
+        <h2  style="color: rgb(4, 196, 4);">Mentor : Mr. Neeraj Khanna</h2>
+        </div>
+        <div id="project_instruction">
+          <h2 style="font-size: 30px;"><u>Project Instruction : </u></h2>
+          <p style="color : red"> - Project Submission date is 20/11/2021.</p>
+          <p> - Project Synopsis submission date 25/10/2021.</p>
+          <p> - Project must be on Github.</p>
+          <p> - Upadte the daily progress.</p>
+        </div>
+       <div class="report">
+        <h1><u>Daily Progress</u></h1>
+        <form>
+            <input type="text" class="todo-input"  placeholder="Write your daily progress"/>
+            <button class="todo-btn">
+                <i class="fa fa-plus-square" aria-hidden="true"></i>
+            </button>
+        </form>
+        
+        <div class="todo-container">
+            <ul class="todo-list">
+        
+        
+            </ul>
+        </div>
+       </div>
+      </div>
+    </div>
+    <script>
+      var todoInput = document.querySelector(".todo-input");
+var todobtn = document.querySelector(".todo-btn");
+var todoList = document.querySelector(".todo-list");
+
+todobtn.onclick = create;
+
+
+function create(e) {
+    e.preventDefault();
+
+    if (todoInput.value) {
+        var newDiv = document.createElement("div");
+        newDiv.classList.add("todo");
+
+        var newli = document.createElement("li");
+        newli.classList.add("todo-li");
+        newli.innerHTML = todoInput.value;
+
+        newDiv.appendChild(newli);
+
+        // var chkbtn = document.createElement("button");
+        // chkbtn.classList.add("chk-btn");
+        // chkbtn.innerHTML = '<i class="fa fa-check"></i>';
+        // newDiv.appendChild(chkbtn);
+
+        var delbtn = document.createElement("button");
+        delbtn.classList.add("del-btn");
+        delbtn.innerHTML = '<i class= "fa fa-trash"></i>';
+        newDiv.appendChild(delbtn);
+        todoInput.value = "";
+
+        todoList.appendChild(newDiv);
+
+        todoList.onclick = chkdel;
+
+        function chkdel(e) {
+            var item = e.target;
+            if (item.classList[0] === "del-btn") {
+                var parent = item.parentNode;
+                parent.remove();
+            }
+            if (item.classList[0] === "chk-btn") {
+                var parent = item.parentNode;
+                parent.classList.toggle("done");
+            }
+        }
+
+    } else {
+        alert("Field can't be empty. Enter value");
+    }
+
+}
+    </script>
+  </body>
+</html>
