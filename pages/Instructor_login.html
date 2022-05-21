@@ -132,10 +132,7 @@
       </div>
       <center>
         <form
-          class="form"
-          name="myform"
-          onsubmit="return validateForm()"
-          method="post"
+          action="../pages/Admin-dashboard1.html"
         >
           <label for="email"></label>
           <input
@@ -154,24 +151,15 @@
             placeholder="Password"
             required
           />
+
+          <div>
+            <button class="btn">Login</a></button>
+          </div>
         </form>
-        <button class="btn"><a href="./Admin-dashboard1.html">Login</a></button>
+        
       </center>
       
     </main>
-    <script>
-      function validateForm() {
-        var name = document["myform"]["email"].value;
-        var password = document["myform"]["password"].value;
-        if(name==null|| name ==""){
-          alert("Name must be fiiled");
-          return false;
-        } 
-        else if(password.length<6){
-          alert("Password must be at least 6 chrachters long");
-          return false;
-        }
-      }
-    </script>
+   
   </body>
 </html>
